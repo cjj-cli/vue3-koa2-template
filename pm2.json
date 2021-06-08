@@ -1,0 +1,14 @@
+{
+  "apps": [
+    {
+      "script": "server/index.js",
+      "instances": "max",
+      "exec_mode": "cluster",
+      "name": "<%=projectName%>",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
